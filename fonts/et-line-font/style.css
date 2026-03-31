@@ -1,4 +1,4 @@
-@font-face {
+@font-face { font-display: swap;
 	font-family: 'et-line';
 	src:url('fonts/et-line.eot');
 	src:url('fonts/et-line.eot?#iefix') format('embedded-opentype'),
@@ -341,3 +341,4 @@ you can use the generic selector below, but it's slower:
 .icon-dribbble:before {
 	content: "\e063";
 }
+

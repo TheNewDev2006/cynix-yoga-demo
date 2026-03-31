@@ -11907,3 +11907,27 @@ img {
     width: auto;
   }
 }
+
+/* Mobile Horizontal Scrolling Utility */
+@media (max-width: 991.98px) {
+    .mobile-scroll-container {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 20px;
+    }
+    .mobile-scroll-container > [class*="col-"] {
+        flex: 0 0 85% !important;
+        max-width: 85% !important;
+        scroll-snap-align: center;
+    }
+    .mobile-scroll-container::-webkit-scrollbar {
+        height: 6px;
+    }
+    .mobile-scroll-container::-webkit-scrollbar-thumb {
+        background: #ccc;
+        border-radius: 4px;
+    }
+}

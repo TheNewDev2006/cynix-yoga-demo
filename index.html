@@ -4,27 +4,35 @@
 <head>
     <title>PowerFlow - Gym Fitness and Yoga HTML Template</title>
     <link rel="icon" href="images/icon.webp" type="image/gif" sizes="16x16">
-    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport" >
     <meta content="PowerFlow - Gym Fitness and Yoga HTML Template" name="description" >
     <meta content="" name="keywords" >
     <meta content="" name="author" >
     <!-- CSS Files
     ================================================== -->
+    <link rel="preload" as="image" href="images/background/4.webp" type="image/webp">
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
-    <link href="css/plugins.css" rel="stylesheet" type="text/css" >
-    <link href="css/style.css" rel="stylesheet" type="text/css" >
-    <link href="css/coloring.css" rel="stylesheet" type="text/css" >
+    <link href="css/plugins.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'">
+    <link href="css/coloring.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'">
     <!-- color scheme -->
-    <link id="colors" href="css/colors/scheme-02.css" rel="stylesheet" type="text/css" >
+    <link id="colors" href="css/colors/scheme-02.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'">
     <!-- custom css -->
-    <link href="css/custom_02.css" rel="stylesheet" type="text/css" >
+    <link href="css/custom_02.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'">
+    <noscript>
+        <link href="css/plugins.css" rel="stylesheet" type="text/css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="css/coloring.css" rel="stylesheet" type="text/css">
+        <link id="colors" href="css/colors/scheme-02.css" rel="stylesheet" type="text/css">
+        <link href="css/custom_02.css" rel="stylesheet" type="text/css">
+    </noscript>
     <!-- Open Graph / SEO -->
     <meta property="og:title" content="Cynix Inc">
     <meta property="og:description" content="Your premier fitness destination in Sri Lanka">
-    <meta property="og:image" content="images/background/4.webp">
+    <meta property="og:image" content="https://cynix-yoga-demo.vercel.app/images/background/4.webp">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="">
+    <meta property="og:url" content="https://cynix-yoga-demo.vercel.app/">
     <meta name="twitter:card" content="summary_large_image">
 
 </head>
@@ -78,7 +86,7 @@
 
         <section aria-label="section" class="relative jarallax p-0 overflow-hidden">
             <div class="gradient-edge-bottom light z-4"></div>
-            <img src="images/background/4.webp" class="jarallax-img" alt="">
+            <img src="images/background/4.webp" class="jarallax-img" alt="" fetchpriority="high">
                 <div class="mh-800">
                     <div class="container">
                         <div class="row relative justify-content-center z-2">
@@ -90,7 +98,7 @@
                             </div>
 
                             <div class="col-lg-8 text-center order-lg-1 order-sm-2">
-                                <img src="images/misc/c3.webp" class="w-100" alt="" data-top="transform: translateY(0px);" data-top-bottom="transform: translateY(500px);">
+                                <img src="images/misc/c3.webp" width="800" height="auto" loading="lazy" class="w-100" alt="" data-top="transform: translateY(0px);" data-top-bottom="transform: translateY(500px);">
                             </div>                            
 
                             <div class="col-lg-2 order-lg-2 order-sm-1">
@@ -99,9 +107,9 @@
                                 <div class="spacer-double sm-hide"></div>
                                 <div class="align-items-center text-dark wow fadeInUp" data-wow-delay=".9s">
                                     <div class="relative me-4 mb-4">
-                                        <img src="images/testimonial/1.webp" class="w-50px circle ms-min-10" alt="">
-                                        <img src="images/testimonial/2.webp" class="w-50px circle ms-min-10" alt="">
-                                        <img src="images/testimonial/3.webp" class="w-50px circle ms-min-10" alt="">
+                                        <img src="images/testimonial/1.webp" width="50" height="50" loading="lazy" class="w-50px circle ms-min-10" alt="">
+                                        <img src="images/testimonial/2.webp" width="50" height="50" loading="lazy" class="w-50px circle ms-min-10" alt="">
+                                        <img src="images/testimonial/3.webp" width="50" height="50" loading="lazy" class="w-50px circle ms-min-10" alt="">
                                     </div>
                                     <div class="fw-600 fs-14 lh-1-5"><span class="fs-16 fw-bold">2300+</span><br>Active Members</div>
                                 </div>
@@ -129,7 +137,7 @@
                         </div>
                     </div>
                 </div>
-            <a href="#section-about" class="mouse-icon-click scroll-to wow fadeInUp" data-wow-delay="1.6s">
+            <a href="#section-about" class="mouse-icon-click scroll-to wow fadeInUp" data-wow-delay="1.6s" aria-label="Scroll to about section">
                 <span class="mouse fadeScroll relative" data-scroll-speed="10">
                     <span class="scroll"></span>
                 </span>
@@ -138,7 +146,7 @@
 
         <section class="pb-0">
             <div class="container text-center">
-                <div class="row g-4">
+                <div class="row g-4 mobile-scroll-container">
                     <div class="col-md-3">
                         <div class="p-3">
                             <i class="fa fa-leaf fs-48 id-color mb-3"></i>
@@ -177,7 +185,7 @@
             <div class="container relative z-2">
                 <div class="row g-4 align-items-center">
                     <div class="col-lg-6">
-                        <img src="images/misc/c1.webp" class="w-100" alt="">
+                        <img src="images/misc/c1.webp" width="800" height="800" loading="lazy" class="w-100" alt="">
                     </div>
                     <div class="col-lg-6">
                         <div class="ms-lg-4">
@@ -288,7 +296,7 @@
                 </div>
                 <div class="row g-4 gx-5 align-items-center">
                     <div class="col-lg-6">
-                        <img src="images/misc/c2.webp" class="w-100" alt="">
+                        <img src="images/misc/c2.webp" width="800" height="800" loading="lazy" class="w-100" alt="">
                     </div>
                     <div class="col-lg-6">
                         <div class="relative mb-4 wow fadeInUp" data-wow-delay=".2s">
@@ -347,12 +355,12 @@
                       <!-- Morning Flow -->
                       <div class="item">
                         <div class="hover rounded-1 overflow-hidden relative text-light text-center">
-                          <img src="images/classes/l1.webp" class="hover-scale-1-1 w-100" alt="">
+                          <img src="images/classes/l1.webp" width="600" height="600" loading="lazy" class="hover-scale-1-1 w-100" alt="">
                           <div class="abs w-100 px-4 hover-op-1 z-4 hover-mt-40 abs-centered">
                             <div class="mb-3">Begin your day with revitalizing movements that awaken your body, calm your mind, and uplift your energy for the day ahead.</div>
                             <a class="btn-line" href="class-single.html">View Details</a>
                           </div>
-                          <img src="images/logo-icon.webp" class="abs abs-centered w-20 z-2" alt="">
+                          <img src="images/logo-icon.webp" width="100" height="100" loading="lazy" class="abs abs-centered w-20 z-2" alt="">
                           <div class="abs bg-color z-2 top-0 w-100 h-100 hover-op-1"></div>
                           <div class="abs z-2 bottom-0 mb-3 w-100 text-center hover-op-0">
                             <h4 class="mb-3">Morning Flow</h4>
@@ -364,12 +372,12 @@
                       <!-- Vinyasa Yoga -->
                       <div class="item">
                         <div class="hover rounded-1 overflow-hidden relative text-light text-center">
-                          <img src="images/classes/l2.webp" class="hover-scale-1-1 w-100" alt="">
+                          <img src="images/classes/l2.webp" width="600" height="600" loading="lazy" class="hover-scale-1-1 w-100" alt="">
                           <div class="abs w-100 px-4 hover-op-1 z-4 hover-mt-40 abs-centered">
                             <div class="mb-3">Flow through dynamic postures connected by mindful breathing to enhance flexibility, focus, and strength in perfect harmony.</div>
                             <a class="btn-line" href="class-single.html">View Details</a>
                           </div>
-                          <img src="images/logo-icon.webp" class="abs abs-centered w-20 z-2" alt="">
+                          <img src="images/logo-icon.webp" width="100" height="100" loading="lazy" class="abs abs-centered w-20 z-2" alt="">
                           <div class="abs bg-color z-2 top-0 w-100 h-100 hover-op-1"></div>
                           <div class="abs z-2 bottom-0 mb-3 w-100 text-center hover-op-0">
                             <h4 class="mb-3">Vinyasa Yoga</h4>
@@ -381,12 +389,12 @@
                       <!-- Core Balance -->
                       <div class="item">
                         <div class="hover rounded-1 overflow-hidden relative text-light text-center">
-                          <img src="images/classes/l3.webp" class="hover-scale-1-1 w-100" alt="">
+                          <img src="images/classes/l3.webp" width="600" height="600" loading="lazy" class="hover-scale-1-1 w-100" alt="">
                           <div class="abs w-100 px-4 hover-op-1 z-4 hover-mt-40 abs-centered">
                             <div class="mb-3">Focus on building core strength and stability through controlled movements that improve posture and inner alignment.</div>
                             <a class="btn-line" href="class-single.html">View Details</a>
                           </div>
-                          <img src="images/logo-icon.webp" class="abs abs-centered w-20 z-2" alt="">
+                          <img src="images/logo-icon.webp" width="100" height="100" loading="lazy" class="abs abs-centered w-20 z-2" alt="">
                           <div class="abs bg-color z-2 top-0 w-100 h-100 hover-op-1"></div>
                           <div class="abs z-2 bottom-0 mb-3 w-100 text-center hover-op-0">
                             <h4 class="mb-3">Core Balance Yoga</h4>
@@ -398,12 +406,12 @@
                       <!-- Gentle Stretch -->
                       <div class="item">
                         <div class="hover rounded-1 overflow-hidden relative text-light text-center">
-                          <img src="images/classes/l4.webp" class="hover-scale-1-1 w-100" alt="">
+                          <img src="images/classes/l4.webp" width="600" height="600" loading="lazy" class="hover-scale-1-1 w-100" alt="">
                           <div class="abs w-100 px-4 hover-op-1 z-4 hover-mt-40 abs-centered">
                             <div class="mb-3">Release tightness and tension with slow, mindful stretches designed to relax muscles and restore your body’s natural ease.</div>
                             <a class="btn-line" href="class-single.html">View Details</a>
                           </div>
-                          <img src="images/logo-icon.webp" class="abs abs-centered w-20 z-2" alt="">
+                          <img src="images/logo-icon.webp" width="100" height="100" loading="lazy" class="abs abs-centered w-20 z-2" alt="">
                           <div class="abs bg-color z-2 top-0 w-100 h-100 hover-op-1"></div>
                           <div class="abs z-2 bottom-0 mb-3 w-100 text-center hover-op-0">
                             <h4 class="mb-3">Gentle Stretch</h4>
@@ -415,12 +423,12 @@
                       <!-- Yin Yoga -->
                       <div class="item">
                         <div class="hover rounded-1 overflow-hidden relative text-light text-center">
-                          <img src="images/classes/l5.webp" class="hover-scale-1-1 w-100" alt="">
+                          <img src="images/classes/l5.webp" width="600" height="600" loading="lazy" class="hover-scale-1-1 w-100" alt="">
                           <div class="abs w-100 px-4 hover-op-1 z-4 hover-mt-40 abs-centered">
                             <div class="mb-3">Hold deep stretches for longer durations to cultivate mindfulness, flexibility, and a profound sense of calm within.</div>
                             <a class="btn-line" href="class-single.html">View Details</a>
                           </div>
-                          <img src="images/logo-icon.webp" class="abs abs-centered w-20 z-2" alt="">
+                          <img src="images/logo-icon.webp" width="100" height="100" loading="lazy" class="abs abs-centered w-20 z-2" alt="">
                           <div class="abs bg-color z-2 top-0 w-100 h-100 hover-op-1"></div>
                           <div class="abs z-2 bottom-0 mb-3 w-100 text-center hover-op-0">
                             <h4 class="mb-3">Yin Yoga</h4>
@@ -432,12 +440,12 @@
                       <!-- Mindful Meditation -->
                       <div class="item">
                         <div class="hover rounded-1 overflow-hidden relative text-light text-center">
-                          <img src="images/classes/l6.webp" class="hover-scale-1-1 w-100" alt="">
+                          <img src="images/classes/l6.webp" width="600" height="600" loading="lazy" class="hover-scale-1-1 w-100" alt="">
                           <div class="abs w-100 px-4 hover-op-1 z-4 hover-mt-40 abs-centered">
                             <div class="mb-3">Cultivate mindfulness and serenity through guided breathing and meditation that quiets the mind and restores balance.</div>
                             <a class="btn-line" href="class-single.html">View Details</a>
                           </div>
-                          <img src="images/logo-icon.webp" class="abs abs-centered w-20 z-2" alt="">
+                          <img src="images/logo-icon.webp" width="100" height="100" loading="lazy" class="abs abs-centered w-20 z-2" alt="">
                           <div class="abs bg-color z-2 top-0 w-100 h-100 hover-op-1"></div>
                           <div class="abs z-2 bottom-0 mb-3 w-100 text-center hover-op-0">
                             <h4 class="mb-3">Mindful Meditation</h4>
@@ -466,7 +474,7 @@
               </div>
             </div>
 
-            <div class="row g-1 text-center">
+            <div class="row g-1 text-center mobile-scroll-container">
 
               <!-- Monday -->
               <div class="col-lg-2 col-md-4 mb-sm-30 wow fadeInUp" data-wow-delay=".2s">
@@ -586,7 +594,7 @@
                         <p>Find balance and flexibility with plans designed for your lifestyle, from mindful beginners to advanced practitioners seeking deeper transformation.</p>
                     </div>
                 </div>
-                <div class="row g-4">
+                <div class="row g-4 mobile-scroll-container">
 
                     <!-- pricing item begin -->
                     <div class="col-md-4 wow fadeInUp" data-wow-delay=".0s">
@@ -700,16 +708,16 @@
         <div class="container">
             <div class="row gx-5">
                 <div class="col-lg-4 col-sm-6">
-                    <img src="images/logo-dark.webp" class="w-250px" alt="" >
+                    <img src="images/logo-dark.webp" width="250" height="80" loading="lazy" class="w-250px" alt="" >
                     <div class="spacer-20"></div>
                     <p>Transform your lifestyle with our expert yoga programs! From calming flow sessions to energizing group practices, we help you achieve balance and inner strength through mindful, personalized guidance. Professional, nurturing, and passionate about your wellbeing—let us guide you to a more centered, flexible, and peaceful you.</p>
 
                     <div class="social-icons mb-sm-30">
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-12 order-lg-1 order-sm-2">

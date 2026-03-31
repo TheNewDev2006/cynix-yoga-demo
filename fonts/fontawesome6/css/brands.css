@@ -7,7 +7,7 @@
   --fa-style-family-brands: 'Font Awesome 6 Brands';
   --fa-font-brands: normal 400 1em/1 'Font Awesome 6 Brands'; }
 
-@font-face {
+@font-face { font-display: swap;
   font-family: 'Font Awesome 6 Brands';
   font-style: normal;
   font-weight: 400;
@@ -1535,3 +1535,4 @@
 
 .fa-steam-symbol:before {
   content: "\f3f6"; }
+
